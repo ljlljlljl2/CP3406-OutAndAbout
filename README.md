@@ -32,10 +32,18 @@ Weather data by [Open-Meteo](https://open-meteo.com/), [API documentation](https
 GET https://api.open-meteo.com/v1/forecast with city coordinates, timezone=auto and current=temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m. Defaults provide Celsius and km/h. Fahrenheit is a local conversion. WMO codes are grouped into readable conditions. Tips are deterministic rules, not a forecast or official alert service.
 
 ## Verification status
-Build and unit test execution was attempted in the assistant environment but stopped before compilation because services.gradle.org was unreachable. No successful build, emulator run, or live API response has been verified here. Run the commands above and follow TESTING.md on your machine before submission. Added tests cover unit conversion, tip priority, loading/error/retry state, city changes and obsolete request cancellation.
+The app was built, installed and run on a Medium Phone emulator running Android 16 / API 36 on 29 October 2026.
+
+Verified behaviour:
+- Singapore weather loaded successfully.
+- Selecting Cairns updated the weather screen.
+- Switching to Fahrenheit updated both temperature and feels-like readings; wind remained in km/h.
+- The testDebugUnitTest and lintDebug tasks completed with BUILD SUCCESSFUL.
+
+The detailed Lint report has not yet been reviewed. Offline recovery, rotation, rapid city switching, accessibility and the attribution link still require manual verification. See TESTING.md for the testing record.
 
 ## Scope and limitations
 Three predefined cities; no search or GPS. No background refresh, persistence or offline disk cache. A refresh failure can retain previous same-city data with a warning. Switching cities clears old data. Current conditions cannot predict rain later in the day. Check local official alerts for travel decisions.
 
 ## Academic acknowledgement
-Based on the lecturer-provided MobileTech Utility App starter. ChatGPT helped implement the weather feature, architecture, tests and documentation. Read and verify all code, record your own testing and changes, and complete the required AI declaration according to course rules. Do not present the reflection prompts as personal experience or invent past Git commits.
+This project extends the lecturer-provided MobileTech Utility App starter. OpenAI ChatGPT assisted with code generation, architecture, tests, troubleshooting and documentation. I configured and ran the project, checked the documented functionality, executed the test and Lint tasks, and uploaded the project. AI assistance is disclosed in the accompanying declaration.
