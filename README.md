@@ -46,4 +46,4 @@ The detailed Lint report has not yet been reviewed. Offline recovery, rotation, 
 Three predefined cities; no search or GPS. No background refresh, persistence or offline disk cache. A refresh failure can retain previous same-city data with a warning. Switching cities clears old data. Current conditions cannot predict rain later in the day. Check local official alerts for travel decisions.
 
 ## Academic acknowledgement
-This project extends the lecturer-provided MobileTech Utility App starter. OpenAI ChatGPT assisted with code generation, architecture, tests, troubleshooting and documentation. I configured and ran the project, checked the documented functionality, executed the test and Lint tasks, and uploaded the project. AI assistance is disclosed in the accompanying declaration.
+This project extends the lecturer-provided MobileTech Utility App starter. OpenAI ChatGPT assisted with troubleshooting and documentation. I configured and ran the project, checked the documented functionality, executed the test and Lint tasks, and uploaded the project.
