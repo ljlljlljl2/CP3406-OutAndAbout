@@ -2,6 +2,9 @@
 
 An extension of the CP3406/CP5307 MobileTech Utility App starter. Helps users check current conditions before leaving home, with minimal interaction and two tabs.
 
+## Repository
+https://github.com/ljlljlljl2/CP3406-OutAndAbout
+
 ## Features
 - Weather tab: temperature, condition, feels-like temperature, wind, humidity, weather timestamp and a condition-based outing tip.
 - Settings tab: Singapore, Townsville or Cairns; Celsius/Fahrenheit switch.
@@ -13,7 +16,7 @@ An extension of the CP3406/CP5307 MobileTech Utility App starter. Helps users ch
 ## Run
 1. Extract the ZIP into a new folder (keep your starter separately).
 2. Open the folder containing settings.gradle.kts in Android Studio.
-3. Use JDK 17 for Gradle, install Android SDK 36, and let Gradle sync finish. Internet access is needed for dependencies.
+3. Use JetBrains JDK 21 for Gradle, matching gradle/gradle-daemon-jvm.properties (toolchainVersion=21). Android Studio's bundled JetBrains Runtime can be used if its Java version is 21. Install Android SDK 36 and let Gradle sync finish. Internet access is needed for dependencies and any required JDK download.
 4. Select an API 26+ emulator or Android device with internet and click Run.
 
 From the project root: `./gradlew :app:assembleDebug :app:testDebugUnitTest :app:lintDebug` (Windows: `gradlew.bat`).
